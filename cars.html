@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css/cars.css">
+</head>
+<body>
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <!-- LOGO -->
+
+            <a href="#" class="logo">
+                <span class="logo-icon">
+                    A
+                </span>
+
+                <span class="logo-text">
+                    AUTO<span>VEX</span>
+                </span>
+            </a>
+
+            <!-- NAVIGATION -->
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="cars.html" class="nav-link">Cars</a>
+                <a href="rental.html" class="nav-link">Rentals</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="#accessories" class="nav-link">Accessories</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- NAV ACTION -->
+
+            <!-- CART -->
+
+            <button class="cart-icon" id="cartIcon">
+
+                🛒
+
+                <span class="cart-count" id="cartCount">
+                    0
+                </span>
+
+            </button>
+
+            <div class="nav-actions">
+                <button class="theme-btn" id="themeBtn">
+                    ◐
+                </button>
+
+                <a href="#contact" class="nav-button">
+                    Get Started
+                </a>
+
+                <button class="menu-btn" id="menuBtn">
+                    ☰
+                </button>
+            </div>
+
+
+        </div>
+    </header>
+
+
+    <main class="cars-page">
+
+    <!-- HERO SECTION -->
+    <section class="cars-hero">
+
+        <div class="hero-content reveal">
+
+            <p class="eyebrow">THE AUTOMOTIVE COLLECTION</p>
+
+            <h1>
+                Find Your
+                <span>Perfect Drive.</span>
+            </h1>
+
+            <p class="hero-text">
+                Discover premium cars from the world's most respected
+                automotive brands. Buy, rent, or simply find your next
+                dream car.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#carCollection" class="hero-btn primary">
+                    Explore Cars
+                    <span>→</span>
+                </a>
+
+                <a href="#carCollection" class="hero-btn secondary">
+                    View Collection
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-car reveal">
+
+            <div class="hero-circle"></div>
+
+            <img
+                src="./assest/images/Luxury sports car.jpg"
+                alt="Luxury sports car"
+            >
+
+            <div class="hero-car-label">
+
+                <small>FEATURED</small>
+
+                <strong>Performance Collection</strong>
+
+                <span>01 / 06</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BRANDS -->
+    <section class="brands-section reveal">
+
+        <p>EXPLORE BY BRAND</p>
+
+        <div class="brands-list">
+
+            <button data-brand="all">ALL</button>
+            <button data-brand="BMW">BMW</button>
+            <button data-brand="Mercedes">MERCEDES</button>
+            <button data-brand="Toyota">TOYOTA</button>
+            <button data-brand="Audi">AUDI</button>
+            <button data-brand="Lexus">LEXUS</button>
+            <button data-brand="Porsche">PORSCHE</button>
+            <button data-brand="Range Rover">RANGE ROVER</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SEARCH AREA -->
+    <section class="car-tools reveal">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="eyebrow">OUR COLLECTION</p>
+
+                <h2>
+                    Choose Your Vehicle
+                </h2>
+            </div>
+
+            <span id="carCount">
+                12 Vehicles
+            </span>
+
+        </div>
+
+
+        <div class="search-tools">
+
+            <div class="search-box">
+
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    id="carSearch"
+                    placeholder="Search by brand or model..."
+                >
+
+            </div>
+
+
+            <select id="typeFilter">
+
+                <option value="all">
+                    All Types
+                </option>
+
+                <option value="Sports">
+                    Sports
+                </option>
+
+                <option value="SUV">
+                    SUV
+                </option>
+
+                <option value="Sedan">
+                    Sedan
+                </option>
+
+                <option value="Luxury">
+                    Luxury
+                </option>
+
+            </select>
+
+
+            <select id="priceFilter">
+
+                <option value="default">
+                    Sort by Price
+                </option>
+
+                <option value="low">
+                    Price: Low to High
+                </option>
+
+                <option value="high">
+                    Price: High to Low
+                </option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+
+    <!-- CAR COLLECTION -->
+    <section
+        class="car-collection"
+        id="carCollection"
+    >
+
+        <div
+            class="cars-grid"
+            id="carsGrid"
+        >
+
+
+            <!-- BMW -->
+            <article
+                class="car-card reveal"
+                data-brand="BMW"
+                data-type="Sports"
+                data-price="85"
+                data-name="BMW M4 Competition"
+            >
+
+                <div class="car-image">
+
+                    <img
+                        src="./assest/images/BMW M4 Competition.jpg"
+                        alt="BMW M4 Competition"
+                    >
+
+                    <span class="car-tag">
+                        SPORT
+                    </span>
+
+                    <button
+                        class="favorite"
+                        aria-label="Add to favorites"
+                    >
+                        ♡
+                    </button>
+
+                </div>
+
+                <div class="car-info">
+
+                    <div class="car-brand">
+                        BMW
+                    </div>
+
+                    <h3>
+                        M4 Competition
+                    </h3>
+
+                    <div class="car-specs">
+                        <span>2024</span>
+                        <span>Automatic</span>
+                        <span>Petrol</span>
+                    </div>
+
+                    <div class="car-bottom">
+
+                        <div class="price">
+                            <small>FROM</small>
+                            <strong>₦85M</strong>
+                        </div>
+
+                        <button
+                            class="details-btn"
+                            data-details
+                        >
+                            Details →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- MERCEDES -->
+            <article
+                class="car-card reveal"
+                data-brand="Mercedes"
+                data-type="Luxury"
+                data-price="72"
+                data-name="Mercedes C-Class"
+            >
+
+                <div class="car-image">
+
+                    <img
+                        src="./assest/images/Mercedes C-Class.jpg"
+                        alt="Mercedes C-Class"
+                    >
+
+                    <span class="car-tag">
+                        LUXURY
+                    </span>
+
+                    <button class="favorite">
+                        ♡
+                    </button>
+
+                </div>
+
+                <div class="car-info">
+
+                    <div class="car-brand">
+                        MERCEDES-BENZ
+                    </div>
+
+                    <h3>
+                        C-Class
+                    </h3>
+
+                    <div class="car-specs">
+                        <span>2024</span>
+                        <span>Automatic</span>
+                        <span>Petrol</span>
+                    </div>
+
+                    <div class="car-bottom">
+
+                        <div class="price">
+                            <small>FROM</small>
+                            <strong>₦72M</strong>
+                        </div>
+
+                        <button
+                            class="details-btn"
+                            data-details
+                        >
+                            Details →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- RANGE ROVER -->
+            <article
+                class="car-card reveal"
+                data-brand="Range Rover"
+                data-type="SUV"
+                data-price="95"
+                data-name="Range Rover Sport"
+            >
+
+                <div class="car-image">
+
+                    <img
+                        src="./assest/images/Range Rover Sport.jpg"
+                        alt="Range Rover Sport"
+                    >
+
+                    <span class="car-tag">
+                        SUV
+                    </span>
+
+                    <button class="favorite">
+                        ♡
+                    </button>
+
+                </div>
+
+                <div class="car-info">
+
+                    <div class="car-brand">
+                        RANGE ROVER
+                    </div>
+
+                    <h3>
+                        Sport
+                    </h3>
+
+                    <div class="car-specs">
+                        <span>2024</span>
+                        <span>Automatic</span>
+                        <span>Petrol</span>
+                    </div>
+
+                    <div class="car-bottom">
+
+                        <div class="price">
+                            <small>FROM</small>
+                            <strong>₦95M</strong>
+                        </div>
+
+                        <button
+                            class="details-btn"
+                            data-details
+                        >
+                            Details →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- TOYOTA -->
+            <article
+                class="car-card reveal"
+                data-brand="Toyota"
+                data-type="SUV"
+                data-price="100"
+                data-name="Toyota Land Cruiser"
+            >
+
+                <div class="car-image">
+
+                    <img
+                        src="./assest/images/Toyota Land Cruiser.jpg"
+                        alt="Toyota Land Cruiser"
+                    >
+
+                    <span class="car-tag">
+                        SUV
+                    </span>
+
+                    <button class="favorite">
+                        ♡
+                    </button>
+
+                </div>
+
+                <div class="car-info">
+
+                    <div class="car-brand">
+                        TOYOTA
+                    </div>
+
+                    <h3>
+                        Land Cruiser
+                    </h3>
+
+                    <div class="car-specs">
+                        <span>2024</span>
+                        <span>Automatic</span>
+                        <span>Petrol</span>
+                    </div>
+
+                    <div class="car-bottom">
+
+                        <div class="price">
+                            <small>FROM</small>
+                            <strong>₦100M</strong>
+                        </div>
+
+                        <button
+                            class="details-btn"
+                            data-details
+                        >
+                            Details →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- AUDI -->
+            <article
+                class="car-card reveal"
+                data-brand="Audi"
+                data-type="Sports"
+                data-price="68"
+                data-name="Audi R8"
+            >
+
+                <div class="car-image">
+
+                    <img
+                        src="./assest/images/Audi R8.jpg"
+                        alt="Audi R8"
+                    >
+
+                    <span class="car-tag">
+                        SPORT
+                    </span>
+
+                    <button class="favorite">
+                        ♡
+                    </button>
+
+                </div>
+
+                <div class="car-info">
+
+                    <div class="car-brand">
+                        AUDI
+                    </div>
+
+                    <h3>
+                        R8
+                    </h3>
+
+                    <div class="car-specs">
+                        <span>2023</span>
+                        <span>Automatic</span>
+                        <span>Petrol</span>
+                    </div>
+
+                    <div class="car-bottom">
+
+                        <div class="price">
+                            <small>FROM</small>
+                            <strong>₦68M</strong>
+                        </div>
+
+                        <button
+                            class="details-btn"
+                            data-details
+                        >
+                            Details →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- LEXUS -->
+            <article
+                class="car-card reveal"
+                data-brand="Lexus"
+                data-type="Luxury"
+                data-price="65"
+                data-name="Lexus LX 600"
+            >
+
+                <div class="car-image">
+
+                    <img
+                        src="./assest/images/Lexus LX 600.jpg"
+                        alt="Lexus LX 600"
+                    >
+
+                    <span class="car-tag">
+                        LUXURY
+                    </span>
+
+                    <button class="favorite">
+                        ♡
+                    </button>
+
+                </div>
+
+                <div class="car-info">
+
+                    <div class="car-brand">
+                        LEXUS
+                    </div>
+
+                    <h3>
+                        LX 600
+                    </h3>
+
+                    <div class="car-specs">
+                        <span>2024</span>
+                        <span>Automatic</span>
+                        <span>Petrol</span>
+                    </div>
+
+                    <div class="car-bottom">
+
+                        <div class="price">
+                            <small>FROM</small>
+                            <strong>₦65M</strong>
+                        </div>
+
+                        <button
+                            class="details-btn"
+                            data-details
+                        >
+                            Details →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PORSCHE -->
+            <article
+                class="car-card reveal"
+                data-brand="Porsche"
+                data-type="Sports"
+                data-price="90"
+                data-name="Porsche 911 Carrera"
+            >
+
+                <div class="car-image">
+
+                    <img
+                        src="./assest/images/Porsche 911 Carrera.jpg"
+                        alt="Porsche 911 Carrera"
+                    >
+
+                    <span class="car-tag">
+                        SPORT
+                    </span>
+
+                    <button class="favorite">
+                        ♡
+                    </button>
+
+                </div>
+
+                <div class="car-info">
+
+                    <div class="car-brand">
+                        PORSCHE
+                    </div>
+
+                    <h3>
+                        911 Carrera
+                    </h3>
+
+                    <div class="car-specs">
+                        <span>2024</span>
+                        <span>Automatic</span>
+                        <span>Petrol</span>
+                    </div>
+
+                    <div class="car-bottom">
+
+                        <div class="price">
+                            <small>FROM</small>
+                            <strong>₦90M</strong>
+                        </div>
+
+                        <button
+                            class="details-btn"
+                            data-details
+                        >
+                            Details →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- BMW SUV -->
+            <article
+                class="car-card reveal"
+                data-brand="BMW"
+                data-type="SUV"
+                data-price="78"
+                data-name="BMW X5"
+            >
+
+                <div class="car-image">
+
+                    <img
+                        src="./assest/images/BMW X5.jpg"
+                        alt="BMW X5"
+                    >
+
+                    <span class="car-tag">
+                        SUV
+                    </span>
+
+                    <button class="favorite">
+                        ♡
+                    </button>
+
+                </div>
+
+                <div class="car-info">
+
+                    <div class="car-brand">
+                        BMW
+                    </div>
+
+                    <h3>
+                        X5
+                    </h3>
+
+                    <div class="car-specs">
+                        <span>2024</span>
+                        <span>Automatic</span>
+                        <span>Petrol</span>
+                    </div>
+
+                    <div class="car-bottom">
+
+                        <div class="price">
+                            <small>FROM</small>
+                            <strong>₦78M</strong>
+                        </div>
+
+                        <button
+                            class="details-btn"
+                            data-details
+                        >
+                            Details →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- NO RESULT -->
+
+        <div
+            class="no-cars"
+            id="noCars"
+        >
+
+            <div>🚘</div>
+
+            <h3>
+                No vehicles found
+            </h3>
+
+            <p>
+                Try another brand, model or category.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHY US -->
+    <section class="cars-benefits reveal">
+
+        <div class="benefit">
+
+            <span>01</span>
+
+            <h3>
+                Quality Vehicles
+            </h3>
+
+            <p>
+                Carefully selected vehicles from trusted
+                manufacturers.
+            </p>
+
+        </div>
+
+
+        <div class="benefit">
+
+            <span>02</span>
+
+            <h3>
+                Flexible Rentals
+            </h3>
+
+            <p>
+                Choose a vehicle that fits your journey and
+                your schedule.
+            </p>
+
+        </div>
+
+
+        <div class="benefit">
+
+            <span>03</span>
+
+            <h3>
+                Expert Support
+            </h3>
+
+            <p>
+                Professional automotive support whenever
+                you need it.
+            </p>
+
+        </div>
+
+
+        <div class="benefit">
+
+            <span>04</span>
+
+            <h3>
+                Easy Purchase
+            </h3>
+
+            <p>
+                A simple and convenient way to find your
+                next vehicle.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- DETAILS MODAL -->
+
+    <div
+        class="car-modal"
+        id="carModal"
+    >
+
+        <div class="modal-content">
+
+            <button
+                class="modal-close"
+                id="modalClose"
+            >
+                ×
+            </button>
+
+            <img
+                id="modalImage"
+                src=""
+                alt=""
+            >
+
+            <div class="modal-info">
+
+                <p id="modalBrand"></p>
+
+                <h2 id="modalName"></h2>
+
+                <strong id="modalPrice"></strong>
+
+                <div class="modal-specs">
+
+                    <span>2024 MODEL</span>
+                    <span>AUTOMATIC</span>
+                    <span>PETROL</span>
+
+                </div>
+
+                <button
+                    class="modal-cart"
+                    id="modalCart"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CART -->
+    <aside
+        class="cart-panel"
+        id="cartPanel"
+    >
+
+        <div class="cart-header">
+
+            <h3>
+                Your Cart
+            </h3>
+
+            <button id="closeCart">
+                ×
+            </button>
+
+        </div>
+
+        <div
+            class="cart-items"
+            id="cartItems"
+        ></div>
+
+        <div class="cart-footer">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="cartTotal">
+                ₦0M
+            </strong>
+
+            <button>
+                Proceed
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- CART OPEN BUTTON -->
+
+    <button
+        class="cart-floating"
+        id="openCart"
+    >
+
+        🛒
+
+        <span id="cartCount">
+            0
+        </span>
+
+    </button>
+
+</main>
+
+    <footer class="site-footer" id="footer">
+
+        <div class="footer-container">
+
+            <!-- TOP FOOTER -->
+
+            <div class="footer-grid">
+
+
+                <!-- COMPANY -->
+
+                <div class="footer-company">
+
+                    <a href="#" class="footer-logo">
+                        <span class="logo-mark">A</span>
+
+                        <span class="logo-text">
+                            AUTO<span>VEX</span>
+                        </span>
+                    </a>
+
+
+                    <p>
+                        Your trusted destination for quality
+                        vehicles, rentals, professional repairs,
+                        and premium car accessories.
+                    </p>
+
+
+                    <!-- SOCIAL LINKS -->
+
+                    <div class="footer-socials">
+
+                        <a href="#" aria-label="Facebook">
+                            f
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            ◎
+                        </a>
+
+                        <a href="#" aria-label="X">
+                            𝕏
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            ▶
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- NAVIGATION -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        COMPANY
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="#home">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#cars">
+                                Cars
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#rental">
+                                Rentals
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#why-us">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#reviews">
+                                Reviews
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#contact">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- SERVICES -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        SERVICES
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="#cars">
+                                Buy a Vehicle
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#rental">
+                                Rent a Vehicle
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#repair">
+                                Car Repair
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#repair">
+                                Maintenance
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#accessories">
+                                Car Accessories
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#contact">
+                                Book Service
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- CONTACT -->
+
+                <div class="footer-column footer-contact">
+
+                    <h3>
+                        CONTACT
+                    </h3>
+
+
+                    <div class="footer-contact-item">
+
+                        <span>
+                            ☎
+                        </span>
+
+                        <a href="tel:+2348000000000">
+                            +234 708 570 1486
+                        </a>
+
+                    </div>
+
+
+                    <div class="footer-contact-item">
+
+                        <span>
+                            ✉
+                        </span>
+
+                        <a href="mailto:info@autovex.com">
+                            info@autovex.com
+                        </a>
+
+                    </div>
+
+
+                    <div class="footer-contact-item">
+
+                        <span>
+                            ⌖
+                        </span>
+
+                        <p>
+                            Port Harcourt,
+                            Rivers State, Nigeria
+                        </p>
+
+                    </div>
+
+
+                    <div class="footer-hours">
+
+                        <strong>
+                            BUSINESS HOURS
+                        </strong>
+
+                        <p>
+                            Mon – Sat:
+                            8:00 AM – 6:00 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- NEWSLETTER -->
+
+            <div class="footer-newsletter">
+
+                <div>
+
+                    <span>
+                        STAY UPDATED
+                    </span>
+
+                    <h3>
+                        Get the latest deals
+                        &amp; vehicle news.
+                    </h3>
+
+                </div>
+
+
+                <form class="newsletter-form" id="newsletterForm">
+
+                    <input type="email" id="newsletterEmail" placeholder="Enter your email address" required>
+
+                    <button type="submit">
+                        Subscribe →
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- BOTTOM -->
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 AUTOVEX.
+                    All rights reserved.
+                </p>
+
+
+                <div class="footer-legal">
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#">
+                        Terms &amp; Conditions
+                    </a>
+
+                </div>
+
+
+                <button class="back-to-top" id="backToTop" aria-label="Back to top">
+                    ↑
+                </button>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="./script.js/cars.js"></script>
+</body>
+</html>

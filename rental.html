@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css/rental.css">
+</head>
+<body>
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <!-- LOGO -->
+
+            <a href="#" class="logo">
+                <span class="logo-icon">
+                    A
+                </span>
+
+                <span class="logo-text">
+                    AUTO<span>VEX</span>
+                </span>
+            </a>
+
+            <!-- NAVIGATION -->
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="cars.html" class="nav-link">Cars</a>
+                <a href="rental.html" class="nav-link">Rentals</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="#accessories" class="nav-link">Accessories</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- NAV ACTION -->
+
+            <!-- CART -->
+
+            <button class="cart-icon" id="cartIcon">
+
+                🛒
+
+                <span class="cart-count" id="cartCount">
+                    0
+                </span>
+
+            </button>
+
+            <div class="nav-actions">
+                <button class="theme-btn" id="themeBtn">
+                    ◐
+                </button>
+
+                <a href="#contact" class="nav-button">
+                    Get Started
+                </a>
+
+                <button class="menu-btn" id="menuBtn">
+                    ☰
+                </button>
+            </div>
+
+
+        </div>
+    </header>
+
+
+    <main class="rental-page">
+
+    <!-- =========================================
+         RENTAL HERO
+    ========================================== -->
+
+    <section class="rental-hero">
+
+        <div class="rental-hero-content reveal">
+
+            <p class="rental-eyebrow">
+                PREMIUM CAR RENTALS
+            </p>
+
+            <h1>
+                Your Journey.
+                <span>Your Car.</span>
+            </h1>
+
+            <p>
+                Rent premium vehicles for business,
+                holidays, special occasions and everyday
+                journeys.
+            </p>
+
+            <a href="#rentalFleet" class="rental-hero-btn">
+                Explore Rental Fleet
+                <span>→</span>
+            </a>
+
+        </div>
+
+
+        <div class="rental-hero-image reveal">
+
+            <div class="hero-ring"></div>
+
+            <img
+                src="./assest/images/premium rental car.jpg"
+                alt="Premium rental car"
+            >
+
+            <div class="hero-image-info">
+
+                <small>
+                    FEATURED RENTAL
+                </small>
+
+                <strong>
+                    Bugatti Chiron
+                </strong>
+
+                <span>
+                    From ₦180,000 / day
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         BOOKING SEARCH
+    ========================================== -->
+
+    <section class="rental-search reveal">
+
+        <div class="rental-search-heading">
+
+            <p>
+                RENTAL SEARCH
+            </p>
+
+            <h2>
+                Find the right car for your journey.
+            </h2>
+
+        </div>
+
+
+        <div class="rental-search-form">
+
+            <div class="rental-input">
+
+                <label>
+                    PICK-UP LOCATION
+                </label>
+
+                <select id="pickupLocation">
+
+                    <option value="Port Harcourt">
+                        Port Harcourt
+                    </option>
+
+                    <option value="Lagos">
+                        Lagos
+                    </option>
+
+                    <option value="Abuja">
+                        Abuja
+                    </option>
+
+                    <option value="Owerri">
+                        Owerri
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="rental-input">
+
+                <label>
+                    PICK-UP DATE
+                </label>
+
+                <input
+                    type="date"
+                    id="pickupDate"
+                >
+
+            </div>
+
+
+            <div class="rental-input">
+
+                <label>
+                    RETURN DATE
+                </label>
+
+                <input
+                    type="date"
+                    id="returnDate"
+                >
+
+            </div>
+
+
+            <button
+                class="search-rental-btn"
+                id="searchRental"
+            >
+                Search Cars
+            </button>
+
+        </div>
+
+        <p
+            class="rental-search-message"
+            id="searchMessage"
+        ></p>
+
+    </section>
+
+
+    <!-- =========================================
+         CATEGORY FILTER
+    ========================================== -->
+
+    <section class="rental-categories reveal">
+
+        <div>
+
+            <p class="rental-eyebrow">
+                CHOOSE YOUR STYLE
+            </p>
+
+            <h2>
+                Browse by category
+            </h2>
+
+        </div>
+
+
+        <div class="category-buttons">
+
+            <button
+                class="category-btn active"
+                data-category="all"
+            >
+                All Cars
+            </button>
+
+            <button
+                class="category-btn"
+                data-category="SUV"
+            >
+                SUVs
+            </button>
+
+            <button
+                class="category-btn"
+                data-category="Luxury"
+            >
+                Luxury
+            </button>
+
+            <button
+                class="category-btn"
+                data-category="Sports"
+            >
+                Sports
+            </button>
+
+            <button
+                class="category-btn"
+                data-category="Sedan"
+            >
+                Sedan
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         RENTAL FLEET
+    ========================================== -->
+
+    <section
+        class="rental-fleet"
+        id="rentalFleet"
+    >
+
+        <div class="fleet-heading reveal">
+
+            <div>
+
+                <p class="rental-eyebrow">
+                    OUR FLEET
+                </p>
+
+                <h2>
+                    Choose your ride
+                </h2>
+
+            </div>
+
+            <span id="rentalCount">
+                8 Vehicles
+            </span>
+
+        </div>
+
+
+        <div
+            class="rental-grid"
+            id="rentalGrid"
+        >
+
+
+            <!-- =================================
+                 CAR 1
+            ================================== -->
+
+            <article
+                class="rental-card reveal"
+                data-category="Luxury"
+                data-price="180000"
+                data-name="Mercedes-Benz GLE"
+            >
+
+                <div class="rental-image">
+
+                    <img
+                        src="./assest/images/Mercedes-Benz GLE.jpg"
+                        alt="Mercedes-Benz GLE"
+                    >
+
+                    <span class="rental-badge">
+                        LUXURY
+                    </span>
+
+                    <button
+                        class="rental-favorite"
+                    >
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="rental-card-body">
+
+                    <p class="rental-brand">
+                        MERCEDES-BENZ
+                    </p>
+
+                    <h3>
+                        GLE
+                    </h3>
+
+                    <div class="rental-specs">
+
+                        <span>
+                            5 Seats
+                        </span>
+
+                        <span>
+                            Automatic
+                        </span>
+
+                        <span>
+                            Petrol
+                        </span>
+
+                    </div>
+
+
+                    <div class="rental-card-bottom">
+
+                        <div class="rental-price">
+
+                            <strong>
+                                ₦180,000
+                            </strong>
+
+                            <span>
+                                / day
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="view-rental"
+                        >
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================
+                 CAR 2
+            ================================== -->
+
+            <article
+                class="rental-card reveal"
+                data-category="SUV"
+                data-price="150000"
+                data-name="Toyota Land Cruiser"
+            >
+
+                <div class="rental-image">
+
+                    <img
+                        src="./assest/images/Toyota Land Cruiser.jpg"
+                        alt="Toyota Land Cruiser"
+                    >
+
+                    <span class="rental-badge">
+                        SUV
+                    </span>
+
+                    <button class="rental-favorite">
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="rental-card-body">
+
+                    <p class="rental-brand">
+                        TOYOTA
+                    </p>
+
+                    <h3>
+                        Land Cruiser
+                    </h3>
+
+                    <div class="rental-specs">
+
+                        <span>
+                            7 Seats
+                        </span>
+
+                        <span>
+                            Automatic
+                        </span>
+
+                        <span>
+                            Petrol
+                        </span>
+
+                    </div>
+
+
+                    <div class="rental-card-bottom">
+
+                        <div class="rental-price">
+
+                            <strong>
+                                ₦150,000
+                            </strong>
+
+                            <span>
+                                / day
+                            </span>
+
+                        </div>
+
+                        <button class="view-rental">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================
+                 CAR 3
+            ================================== -->
+
+            <article
+                class="rental-card reveal"
+                data-category="Sports"
+                data-price="250000"
+                data-name="Porsche 911 Carrera"
+            >
+
+                <div class="rental-image">
+
+                    <img
+                        src="./assest/images/Porsche 911 Carrera1.jpg"
+                        alt="Porsche 911 Carrera"
+                    >
+
+                    <span class="rental-badge">
+                        SPORTS
+                    </span>
+
+                    <button class="rental-favorite">
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="rental-card-body">
+
+                    <p class="rental-brand">
+                        PORSCHE
+                    </p>
+
+                    <h3>
+                        911 Carrera
+                    </h3>
+
+                    <div class="rental-specs">
+
+                        <span>
+                            2 Seats
+                        </span>
+
+                        <span>
+                            Automatic
+                        </span>
+
+                        <span>
+                            Petrol
+                        </span>
+
+                    </div>
+
+
+                    <div class="rental-card-bottom">
+
+                        <div class="rental-price">
+
+                            <strong>
+                                ₦250,000
+                            </strong>
+
+                            <span>
+                                / day
+                            </span>
+
+                        </div>
+
+                        <button class="view-rental">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================
+                 CAR 4
+            ================================== -->
+
+            <article
+                class="rental-card reveal"
+                data-category="Luxury"
+                data-price="220000"
+                data-name="Range Rover Sport"
+            >
+
+                <div class="rental-image">
+
+                    <img
+                        src="./assest/images/Range Rover Sportt.jpg"
+                        alt="Range Rover Sport"
+                    >
+
+                    <span class="rental-badge">
+                        LUXURY
+                    </span>
+
+                    <button class="rental-favorite">
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="rental-card-body">
+
+                    <p class="rental-brand">
+                        RANGE ROVER
+                    </p>
+
+                    <h3>
+                        Sport
+                    </h3>
+
+                    <div class="rental-specs">
+
+                        <span>
+                            5 Seats
+                        </span>
+
+                        <span>
+                            Automatic
+                        </span>
+
+                        <span>
+                            Petrol
+                        </span>
+
+                    </div>
+
+
+                    <div class="rental-card-bottom">
+
+                        <div class="rental-price">
+
+                            <strong>
+                                ₦220,000
+                            </strong>
+
+                            <span>
+                                / day
+                            </span>
+
+                        </div>
+
+                        <button class="view-rental">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================
+                 CAR 5
+            ================================== -->
+
+            <article
+                class="rental-card reveal"
+                data-category="Sedan"
+                data-price="100000"
+                data-name="BMW 5 Series"
+            >
+
+                <div class="rental-image">
+
+                    <img
+                        src="./assest/images/BMW 5 Series.jpg"
+                        alt="BMW 5 Series"
+                    >
+
+                    <span class="rental-badge">
+                        SEDAN
+                    </span>
+
+                    <button class="rental-favorite">
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="rental-card-body">
+
+                    <p class="rental-brand">
+                        BMW
+                    </p>
+
+                    <h3>
+                        5 Series
+                    </h3>
+
+                    <div class="rental-specs">
+
+                        <span>
+                            5 Seats
+                        </span>
+
+                        <span>
+                            Automatic
+                        </span>
+
+                        <span>
+                            Petrol
+                        </span>
+
+                    </div>
+
+
+                    <div class="rental-card-bottom">
+
+                        <div class="rental-price">
+
+                            <strong>
+                                ₦100,000
+                            </strong>
+
+                            <span>
+                                / day
+                            </span>
+
+                        </div>
+
+                        <button class="view-rental">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================
+                 CAR 6
+            ================================== -->
+
+            <article
+                class="rental-card reveal"
+                data-category="SUV"
+                data-price="130000"
+                data-name="Lexus RX 350"
+            >
+
+                <div class="rental-image">
+
+                    <img
+                        src="./assest/images/Lexus RX 350.jpg"
+                        alt="Lexus RX 350"
+                    >
+
+                    <span class="rental-badge">
+                        SUV
+                    </span>
+
+                    <button class="rental-favorite">
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="rental-card-body">
+
+                    <p class="rental-brand">
+                        LEXUS
+                    </p>
+
+                    <h3>
+                        RX 350
+                    </h3>
+
+                    <div class="rental-specs">
+
+                        <span>
+                            5 Seats
+                        </span>
+
+                        <span>
+                            Automatic
+                        </span>
+
+                        <span>
+                            Petrol
+                        </span>
+
+                    </div>
+
+
+                    <div class="rental-card-bottom">
+
+                        <div class="rental-price">
+
+                            <strong>
+                                ₦130,000
+                            </strong>
+
+                            <span>
+                                / day
+                            </span>
+
+                        </div>
+
+                        <button class="view-rental">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================
+                 CAR 7
+            ================================== -->
+
+            <article
+                class="rental-card reveal"
+                data-category="Sports"
+                data-price="200000"
+                data-name="Audi R8"
+            >
+
+                <div class="rental-image">
+
+                    <img
+                        src="./assest/images/Audi R8.jpg"
+                        alt="Audi R8"
+                    >
+
+                    <span class="rental-badge">
+                        SPORTS
+                    </span>
+
+                    <button class="rental-favorite">
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="rental-card-body">
+
+                    <p class="rental-brand">
+                        AUDI
+                    </p>
+
+                    <h3>
+                        R8
+                    </h3>
+
+                    <div class="rental-specs">
+
+                        <span>
+                            2 Seats
+                        </span>
+
+                        <span>
+                            Automatic
+                        </span>
+
+                        <span>
+                            Petrol
+                        </span>
+
+                    </div>
+
+
+                    <div class="rental-card-bottom">
+
+                        <div class="rental-price">
+
+                            <strong>
+                                ₦200,000
+                            </strong>
+
+                            <span>
+                                / day
+                            </span>
+
+                        </div>
+
+                        <button class="view-rental">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================
+                 CAR 8
+            ================================== -->
+
+            <article
+                class="rental-card reveal"
+                data-category="Luxury"
+                data-price="170000"
+                data-name="Mercedes S-Class"
+            >
+
+                <div class="rental-image">
+
+                    <img
+                        src="./assest/images/MERCEDES-BENZ.jpg"
+                        alt="Mercedes S-Class"
+                    >
+
+                    <span class="rental-badge">
+                        LUXURY
+                    </span>
+
+                    <button class="rental-favorite">
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="rental-card-body">
+
+                    <p class="rental-brand">
+                        MERCEDES-BENZ
+                    </p>
+
+                    <h3>
+                        S-Class
+                    </h3>
+
+                    <div class="rental-specs">
+
+                        <span>
+                            5 Seats
+                        </span>
+
+                        <span>
+                            Automatic
+                        </span>
+
+                        <span>
+                            Petrol
+                        </span>
+
+                    </div>
+
+
+                    <div class="rental-card-bottom">
+
+                        <div class="rental-price">
+
+                            <strong>
+                                ₦170,000
+                            </strong>
+
+                            <span>
+                                / day
+                            </span>
+
+                        </div>
+
+                        <button class="view-rental">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <div
+            class="rental-empty"
+            id="rentalEmpty"
+        >
+
+            <div>
+                🚘
+            </div>
+
+            <h3>
+                No cars found
+            </h3>
+
+            <p>
+                Try selecting another category.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         RENTAL BENEFITS
+    ========================================== -->
+
+    <section class="rental-benefits reveal">
+
+        <div class="rental-benefit">
+
+            <span>
+                01
+            </span>
+
+            <h3>
+                Well Maintained
+            </h3>
+
+            <p>
+                Every vehicle is inspected and maintained
+                before it goes out for rental.
+            </p>
+
+        </div>
+
+
+        <div class="rental-benefit">
+
+            <span>
+                02
+            </span>
+
+            <h3>
+                Flexible Rental
+            </h3>
+
+            <p>
+                Choose the rental duration that works
+                best for your trip.
+            </p>
+
+        </div>
+
+
+        <div class="rental-benefit">
+
+            <span>
+                03
+            </span>
+
+            <h3>
+                Premium Fleet
+            </h3>
+
+            <p>
+                Drive vehicles from some of the world's
+                most respected brands.
+            </p>
+
+        </div>
+
+
+        <div class="rental-benefit">
+
+            <span>
+                04
+            </span>
+
+            <h3>
+                Easy Booking
+            </h3>
+
+            <p>
+                Select your vehicle, dates and location
+                and you're ready to go.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         RENTAL DETAILS MODAL
+    ========================================== -->
+
+    <div
+        class="rental-modal"
+        id="rentalModal"
+    >
+
+        <div class="rental-modal-content">
+
+            <button
+                class="rental-modal-close"
+                id="rentalModalClose"
+            >
+                ×
+            </button>
+
+
+            <img
+                id="modalRentalImage"
+                src=""
+                alt=""
+            >
+
+
+            <div class="rental-modal-info">
+
+                <p id="modalRentalBrand">
+                </p>
+
+                <h2 id="modalRentalName">
+                </h2>
+
+                <div class="modal-rental-price">
+                    <strong id="modalRentalPrice">
+                    </strong>
+
+                    <span>
+                        / day
+                    </span>
+                </div>
+
+
+                <div class="modal-rental-specs">
+
+                    <span>
+                        5 Seats
+                    </span>
+
+                    <span>
+                        Automatic
+                    </span>
+
+                    <span>
+                        Air Conditioning
+                    </span>
+
+                    <span>
+                        GPS
+                    </span>
+
+                </div>
+
+
+                <p class="modal-description">
+                    Enjoy a comfortable and reliable
+                    driving experience with our carefully
+                    maintained rental vehicles.
+                </p>
+
+
+                <button
+                    class="book-rental-btn"
+                    id="bookRental"
+                >
+                    Book This Car
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         RENTAL CART
+    ========================================== -->
+
+    <aside
+        class="rental-cart"
+        id="rentalCart"
+    >
+
+        <div class="rental-cart-header">
+
+            <div>
+
+                <small>
+                    YOUR RENTAL
+                </small>
+
+                <h3>
+                    Booking Summary
+                </h3>
+
+            </div>
+
+            <button id="closeRentalCart">
+                ×
+            </button>
+
+        </div>
+
+
+        <div
+            class="rental-cart-body"
+            id="rentalCartBody"
+        >
+
+            <div class="empty-cart-message">
+
+                <div>
+                    🚗
+                </div>
+
+                <p>
+                    No vehicle selected.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="rental-cart-footer">
+
+            <div>
+
+                <span>
+                    Rental Duration
+                </span>
+
+                <strong id="rentalDays">
+                    0 days
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="rentalTotal">
+                    ₦0
+                </strong>
+
+            </div>
+
+
+            <button
+                id="confirmRental"
+                disabled
+            >
+                Confirm Booking
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================================
+         FLOATING RENTAL BUTTON
+    ========================================== -->
+
+    <button
+        class="rental-floating"
+        id="openRentalCart"
+    >
+
+        🚗
+
+        <span id="rentalCartCount">
+            0
+        </span>
+
+    </button>
+
+
+    <!-- =========================================
+         BOOKING SUCCESS
+    ========================================== -->
+
+    <div
+        class="booking-success"
+        id="bookingSuccess"
+    >
+
+        <div class="success-box">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h2>
+                Booking Request Sent
+            </h2>
+
+            <p>
+                Your rental request has been prepared
+                successfully.
+            </p>
+
+            <button id="closeSuccess">
+                Continue Browsing
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+    <footer class="site-footer" id="footer">
+
+        <div class="footer-container">
+
+            <!-- TOP FOOTER -->
+
+            <div class="footer-grid">
+
+
+                <!-- COMPANY -->
+
+                <div class="footer-company">
+
+                    <a href="#" class="footer-logo">
+                        <span class="logo-mark">A</span>
+
+                        <span class="logo-text">
+                            AUTO<span>VEX</span>
+                        </span>
+                    </a>
+
+
+                    <p>
+                        Your trusted destination for quality
+                        vehicles, rentals, professional repairs,
+                        and premium car accessories.
+                    </p>
+
+
+                    <!-- SOCIAL LINKS -->
+
+                    <div class="footer-socials">
+
+                        <a href="#" aria-label="Facebook">
+                            f
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            ◎
+                        </a>
+
+                        <a href="#" aria-label="X">
+                            𝕏
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            ▶
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- NAVIGATION -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        COMPANY
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="#home">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#cars">
+                                Cars
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#rental">
+                                Rentals
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#why-us">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#reviews">
+                                Reviews
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#contact">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- SERVICES -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        SERVICES
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="#cars">
+                                Buy a Vehicle
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#rental">
+                                Rent a Vehicle
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#repair">
+                                Car Repair
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#repair">
+                                Maintenance
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#accessories">
+                                Car Accessories
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#contact">
+                                Book Service
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- CONTACT -->
+
+                <div class="footer-column footer-contact">
+
+                    <h3>
+                        CONTACT
+                    </h3>
+
+
+                    <div class="footer-contact-item">
+
+                        <span>
+                            ☎
+                        </span>
+
+                        <a href="tel:+2348000000000">
+                            +234 708 570 1486
+                        </a>
+
+                    </div>
+
+
+                    <div class="footer-contact-item">
+
+                        <span>
+                            ✉
+                        </span>
+
+                        <a href="mailto:info@autovex.com">
+                            info@autovex.com
+                        </a>
+
+                    </div>
+
+
+                    <div class="footer-contact-item">
+
+                        <span>
+                            ⌖
+                        </span>
+
+                        <p>
+                            Port Harcourt,
+                            Rivers State, Nigeria
+                        </p>
+
+                    </div>
+
+
+                    <div class="footer-hours">
+
+                        <strong>
+                            BUSINESS HOURS
+                        </strong>
+
+                        <p>
+                            Mon – Sat:
+                            8:00 AM – 6:00 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- NEWSLETTER -->
+
+            <div class="footer-newsletter">
+
+                <div>
+
+                    <span>
+                        STAY UPDATED
+                    </span>
+
+                    <h3>
+                        Get the latest deals
+                        &amp; vehicle news.
+                    </h3>
+
+                </div>
+
+
+                <form class="newsletter-form" id="newsletterForm">
+
+                    <input type="email" id="newsletterEmail" placeholder="Enter your email address" required>
+
+                    <button type="submit">
+                        Subscribe →
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- BOTTOM -->
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 AUTOVEX.
+                    All rights reserved.
+                </p>
+
+
+                <div class="footer-legal">
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#">
+                        Terms &amp; Conditions
+                    </a>
+
+                </div>
+
+
+                <button class="back-to-top" id="backToTop" aria-label="Back to top">
+                    ↑
+                </button>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="./script.js/rental.js"></script>
+</body>
+</html>
